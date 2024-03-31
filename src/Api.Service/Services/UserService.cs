@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces;
 using Api.Domain.Interfaces.Services.UserAggregate;
 
-namespace Api.Service.Services.UserAggregate
+namespace Api.Service.Services
 {
     public class UserService : IUserService
     {

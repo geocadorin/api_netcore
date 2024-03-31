@@ -100,7 +100,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Data\\Data.csproj"
+              },
+              "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+              },
+              "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Service\\Service.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -117,6 +127,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -307,9 +323,6 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj"
-              },
               "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
                 "projectPath": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Data\\Data.csproj"
               },
