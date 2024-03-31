@@ -8,7 +8,7 @@ namespace Api.Data.Context
         public MyContext CreateDbContext(string[] args)
         {
             //Usado para criar as migrações em tempo de desenvolvimento do projeto
-            var connectionString = "Server=localhost;Port=3306;Database=dbAPI;Uid=root;Pwd12345678";
+            var connectionString = "Server=localhost;Port=3306;Database=coreapi;Uid=root;Pwd=12345678;";
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
             optionsBuilder.UseMySql(connectionString);
 
