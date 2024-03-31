@@ -16,6 +16,11 @@ namespace Api.Data.Repository
             _context = context;
             _dataset = context.Set<T>();
         }
+
+        public async Task<bool> ExistAsync(Guid id)
+        {
+            return await _dataset.AnyAsync(p => p.Id.Equals(id));
+        }
         public async Task<bool> DeleteAsync(Guid id)
         {
             try
@@ -51,14 +56,29 @@ namespace Api.Data.Repository
             return item;
         }
 
-        public Task<IEnumerable<T>> SelectAllAsync()
+        public async Task<IEnumerable<T>> SelectAllAsync()
         {
-            throw new NotImplementedException();
+            try
+            {
+                //TODO: melhorar a busca colocando clausulas where
+                return await _dataset.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
-        public Task<T> SelectByIdAsync(Guid id)
+        public async Task<T> SelectByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(id));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<T> UpdateAsync(T item)
