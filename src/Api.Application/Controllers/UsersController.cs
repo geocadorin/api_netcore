@@ -3,6 +3,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces.Services.UserAggregate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -10,13 +11,16 @@ namespace Api.Application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize("Bearer")]
     public class UsersController : ControllerBase
     {
+
         public IUserService _service { get; set; }
         public UsersController(IUserService service)
         {
             _service = service;
         }
+
 
         [HttpGet]
         public async Task<ActionResult> GetAll()

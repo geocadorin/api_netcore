@@ -19,8 +19,8 @@ namespace Api.Service.Services
     {
 
         private IUserRepository _repository;
-        public SigningConfigurations _signingConfigurations;
-        public TokenConfigurations _tokenConfigurations;
+        private SigningConfigurations _signingConfigurations;
+        private TokenConfigurations _tokenConfigurations;
         private IConfiguration _configuration { get; }
 
         public LoginService(IUserRepository repository,
