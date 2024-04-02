@@ -8,14 +8,7 @@
       "TRACE",
       "DEBUG",
       "NETCOREAPP",
-      "NETCOREAPP3_1",
-      "NETCOREAPP1_0_OR_GREATER",
-      "NETCOREAPP1_1_OR_GREATER",
-      "NETCOREAPP2_0_OR_GREATER",
-      "NETCOREAPP2_1_OR_GREATER",
-      "NETCOREAPP2_2_OR_GREATER",
-      "NETCOREAPP3_0_OR_GREATER",
-      "NETCOREAPP3_1_OR_GREATER"
+      "NETCOREAPP3_1"
     ],
     "languageVersion": "8.0",
     "platform": "",
@@ -29,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Application/1.0.0": {
+      "application/1.0.0": {
         "dependencies": {
           "CrossCutting": "1.0.0",
           "Domain": "1.0.0",
@@ -307,10 +300,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "Application.dll": {}
+          "application.dll": {}
         },
         "compile": {
-          "Application.dll": {}
+          "application.dll": {}
         }
       },
       "AutoMapper/10.0.0": {
@@ -942,7 +935,11 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.ComponentModel.Annotations/4.7.0": {},
+      "System.ComponentModel.Annotations/4.7.0": {
+        "compile": {
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+        }
+      },
       "System.ComponentModel.Primitives/4.3.0": {
         "dependencies": {
           "System.ComponentModel": "4.3.0",
@@ -1444,6 +1441,7 @@
       },
       "CrossCutting/1.0.0": {
         "dependencies": {
+          "AutoMapper": "10.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.0.1",
           "Data": "1.0.0",
           "Domain": "1.0.0",
@@ -1482,6 +1480,7 @@
       },
       "Service/1.0.0": {
         "dependencies": {
+          "AutoMapper": "10.0.0",
           "Data": "1.0.0",
           "Domain": "1.0.0"
         },
@@ -3109,7 +3108,7 @@
     }
   },
   "libraries": {
-    "Application/1.0.0": {
+    "application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
