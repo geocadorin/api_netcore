@@ -12,10 +12,17 @@ namespace Api.Application.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
+
+        public ILoginService _service { get; set; }
+        public LoginController(ILoginService service)
+        {
+            _service = service;
+        }
+
+
         [AllowAnonymous]
         [HttpPost]
-        public async Task<object> Login([FromBody] LoginDto loginDto,
-                                        [FromServices] ILoginService service)
+        public async Task<object> Login([FromBody] LoginDto loginDto)
         {
             if (!ModelState.IsValid || loginDto == null)
             {
@@ -23,7 +30,7 @@ namespace Api.Application.Controllers
             }
             try
             {
-                var result = await service.FindByLogin(loginDto);
+                var result = await _service.FindByLogin(loginDto);
                 if (result != null)
                 {
                     return Ok(result);
