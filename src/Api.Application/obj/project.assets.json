@@ -5999,19 +5999,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\geovanni.cadorin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Application\\Application.csproj",
-      "projectName": "Application",
-      "projectPath": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Application\\obj\\",
+      "projectUniqueName": "C:\\Desenvolvimento\\Facu\\api_netcore\\src\\Api.Application\\application.csproj",
+      "projectName": "application",
+      "projectPath": "C:\\Desenvolvimento\\Facu\\api_netcore\\src\\Api.Application\\application.csproj",
+      "packagesPath": "C:\\Users\\geovanni.cadorin\\.nuget\\packages\\",
+      "outputPath": "C:\\Desenvolvimento\\Facu\\api_netcore\\src\\Api.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\geovanni.cadorin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6025,14 +6025,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj"
+            "C:\\Desenvolvimento\\Facu\\api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+              "projectPath": "C:\\Desenvolvimento\\Facu\\api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj"
             },
-            "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+            "C:\\Desenvolvimento\\Facu\\api_netcore\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "C:\\Desenvolvimento\\Facu\\api_netcore\\src\\Api.Domain\\Domain.csproj"
             },
-            "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Service\\Service.csproj"
+            "C:\\Desenvolvimento\\Facu\\api_netcore\\src\\Api.Service\\Service.csproj": {
+              "projectPath": "C:\\Desenvolvimento\\Facu\\api_netcore\\src\\Api.Service\\Service.csproj"
             }
           }
         }
@@ -6041,11 +6041,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -6080,20 +6075,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Authentication.JwtBearer' 3.1.6 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-q7cg-43mg-qp69",
-      "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

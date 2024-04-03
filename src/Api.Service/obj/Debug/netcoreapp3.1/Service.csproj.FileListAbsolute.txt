@@ -14,3 +14,17 @@ C:\Users\Usuario\Documents\Desenvolvimento\Cursos\netcore\curso_api_netcore\src\
 C:\Users\Usuario\Documents\Desenvolvimento\Cursos\netcore\curso_api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Usuario\Documents\Desenvolvimento\Cursos\netcore\curso_api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.sourcelink.json
 C:\Users\Usuario\Documents\Desenvolvimento\Cursos\netcore\curso_api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csproj.Up2Date
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Service.deps.json
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Service.dll
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Data.dll
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csprojAssemblyReference.cache
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.dll
+C:\Desenvolvimento\Facu\api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.pdb
