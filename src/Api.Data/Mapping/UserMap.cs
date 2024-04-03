@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Api.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -21,11 +17,15 @@ namespace Api.Data.Mapping
 
             builder.Property(u => u.Name)
                 .IsRequired()
-                .HasMaxLength(60);
+                .HasMaxLength(100);
 
             builder.Property(u => u.Email)
                .IsRequired()
                .HasMaxLength(200);
+
+            builder.Property(u => u.Password)
+               .IsRequired()
+               .HasMaxLength(100);
         }
     }
 }

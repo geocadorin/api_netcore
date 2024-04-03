@@ -75,6 +75,27 @@ dotnet restore
 dotnet build
 ~~~
 
+dotnet ef migrations add Inital_Migration
+
+### 7. Gerar Migration
+
+**O comando deve ser executado estando dentro da pasta Api.Data.**
+
+~~~js
+//Inital_Migration é o nome da migration então pode ser trocado
+dotnet ef migrations add Inital_Migration
+~~~
+
+
+### 8. Executar Migration
+
+**O comando deve ser executado estando dentro da pasta Api.Data.**
+
+~~~js
+
+dotnet ef database update
+~~~
+
 
 # Entendendo o DDD
 

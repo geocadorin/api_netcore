@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "O4W/hil1ya1cnjz33G5D7qCAmCICy9Zya6wNDUcuR0vIFAyIIBD4W2PPtxgiXiBINwe4/Eku5WXBEBkMUwyLuw==",
+  "dgSpecHash": "RMoXgwyJbUtzqZrq16GXZwEU/TqyuCEYEESnLdQdA6xkQ4JLUPGXBQvUngB07wylOOnEE1Dg0kcos4FlTFjkOg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

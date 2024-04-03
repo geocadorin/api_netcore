@@ -1,7 +1,7 @@
 using System;
 using System.Net;
 using System.Threading.Tasks;
-using Api.Domain.Entities;
+using Api.Domain.Dtos.UserAggregate;
 using Api.Domain.Interfaces.Services.UserAggregate;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,21 +11,23 @@ namespace Api.Application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize("Bearer")]
+    //[Authorize("Bearer")]
     public class UsersController : ControllerBase
     {
-
         public IUserService _service { get; set; }
         public UsersController(IUserService service)
         {
             _service = service;
         }
 
-
+        [Authorize("Bearer")]
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);  // 400 Bad Request - Solicitação Inválida
+            }
             try
             {
                 return Ok(await _service.GetAll());
@@ -36,11 +38,15 @@ namespace Api.Application.Controllers
             }
         }
 
+        [Authorize("Bearer")]
         [HttpGet]
         [Route("{id}", Name = "GetById")]
-        public async Task<ActionResult> GetById(Guid id)
+        public async Task<ActionResult> Get(Guid id)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             try
             {
                 return Ok(await _service.Get(id));
@@ -51,8 +57,9 @@ namespace Api.Application.Controllers
             }
         }
 
+        //[Authorize("Bearer")]
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] UserEntity user)
+        public async Task<ActionResult> Post([FromBody] UserDtoCreate user)
         {
             if (!ModelState.IsValid)
             {
@@ -76,8 +83,9 @@ namespace Api.Application.Controllers
             }
         }
 
+        [Authorize("Bearer")]
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] UserEntity user)
+        public async Task<ActionResult> Put([FromBody] UserDtoUpdate user)
         {
             if (!ModelState.IsValid)
             {
@@ -92,7 +100,7 @@ namespace Api.Application.Controllers
                 }
                 else
                 {
-                    return NotFound();
+                    return BadRequest();
                 }
             }
             catch (ArgumentException e)
@@ -101,6 +109,7 @@ namespace Api.Application.Controllers
             }
         }
 
+        [Authorize("Bearer")]
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(Guid id)
         {

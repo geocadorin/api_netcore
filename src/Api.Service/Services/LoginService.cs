@@ -37,16 +37,17 @@ namespace Api.Service.Services
         public async Task<object> FindByLogin(LoginDto user)
         {
             var baseUser = new UserEntity();
-            if (user != null && !string.IsNullOrWhiteSpace(user.Email))
+            if (LoginDtoIsValid(user))
             {
                 baseUser = await _repository.FindByLogin(user.Email);
-                if (baseUser == null)
+                if (baseUser == null || !BCrypt.Net.BCrypt.Verify(user.Password, baseUser.Password))
                 {
-                    return new
-                    {
-                        authenticated = false,
-                        message = "Falha ao autenticar"
-                    };
+                    // return new
+                    // {
+                    //     authenticated = false,
+                    //     message = "Falha ao autenticar"
+                    // };
+                    return null;
                 }
                 else
                 {
@@ -69,11 +70,12 @@ namespace Api.Service.Services
             }
             else
             {
-                return new
-                {
-                    authenticated = false,
-                    message = "Falha ao autenticar"
-                };
+                // return new
+                // {
+                //     authenticated = false,
+                //     message = "Falha ao autenticar"
+                // };
+                return null;
             }
         }
 
@@ -105,6 +107,12 @@ namespace Api.Service.Services
                 name = user.Name,
                 message = "Usuário Logado com sucesso"
             };
+        }
+
+        private bool LoginDtoIsValid(LoginDto user)
+        {
+            if (user != null && !string.IsNullOrWhiteSpace(user.Email) && !string.IsNullOrWhiteSpace(user.Password)) return true;
+            return false;
         }
     }
 }

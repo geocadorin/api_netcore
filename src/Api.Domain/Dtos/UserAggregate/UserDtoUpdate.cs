@@ -17,7 +17,11 @@ namespace Api.Domain.Dtos.UserAggregate
 
         [Required(ErrorMessage = "Email é um campo obrigatório")]
         [EmailAddress(ErrorMessage = "E-mail em formato inválido.")]
-        [StringLength(100, ErrorMessage = "Email deve ter no máximo {1} caracteres.")]
+        [StringLength(200, ErrorMessage = "Email deve ter no máximo {1} caracteres.")]
         public string Email { get; set; }
+
+        [Required(ErrorMessage = "Senha é um campo obrigatório")]
+        [StringLength(maximumLength: 16, MinimumLength = 6, ErrorMessage = "A senha deve conter de 6 a 16 caracteres.")]
+        public string Password { get; set; }
     }
 }
