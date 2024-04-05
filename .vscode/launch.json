@@ -10,7 +10,7 @@
              "request": "launch",
              "preLaunchTask": "build",
              // If you have changed target frameworks, make sure to update the program path.
-             "program": "${workspaceFolder}/src/Api.Application/bin/Debug/net5.0/Application.dll",
+             "program": "${workspaceFolder}/src/Api.Application/bin/Debug/net6.0/Application.dll",
              "args": [],
              "cwd": "${workspaceFolder}/src/Api.Application",
              "stopAtEntry": false,
@@ -20,7 +20,10 @@
                  "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"                
              },
              "env": {
-                 "ASPNETCORE_ENVIRONMENT": "Development"
+                 "ASPNETCORE_ENVIRONMENT": "Development",
+                 "DB_CONNECTION": "Server=localhost;Port=3306;Database=uaiflydb;Uid=root;Pwd=12345678;",
+                 "DATABASE": "MYSQL",
+                 "MIGRATION": "APPLY"
              },
              "sourceFileMap": {
                  "/Views": "${workspaceFolder}/Views"

@@ -20,10 +20,7 @@ namespace Api.CrossCutting.DependencyInjection
 
             serviceCollection.AddDbContext<MyContext>(
                 options => options.UseMySql(Environment.GetEnvironmentVariable("DB_CONNECTION"),
-                    new MySqlServerVersion(new Version(8, 0, 21)),
-                        mySqlOptions => mySqlOptions
-                            .CharSetBehavior(CharSetBehavior.NeverAppend))
-                    );
+                    new MySqlServerVersion(new Version(8, 0, 21))));
         }
     }
 }
