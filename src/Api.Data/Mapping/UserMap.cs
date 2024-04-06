@@ -15,9 +15,13 @@ namespace Api.Data.Mapping
             builder.HasIndex(u => u.Email)
                 .IsUnique();
 
-            builder.Property(u => u.Name)
+            builder.Property(u => u.FirstName)
                 .IsRequired()
-                .HasMaxLength(100);
+                .HasMaxLength(30);
+
+            builder.Property(u => u.LastName)
+                .IsRequired()
+                .HasMaxLength(60);
 
             builder.Property(u => u.Email)
                .IsRequired()
@@ -26,6 +30,16 @@ namespace Api.Data.Mapping
             builder.Property(u => u.Password)
                .IsRequired()
                .HasMaxLength(100);
+
+            builder.Property(u => u.DateBirth)
+               .IsRequired()
+               .HasColumnType("DATE");
+
+            builder.Property(u => u.Status)
+               .IsRequired();
+
+            builder.Property(u => u.TypeUser)
+               .IsRequired();
         }
     }
 }

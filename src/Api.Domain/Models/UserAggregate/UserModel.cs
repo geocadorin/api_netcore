@@ -55,7 +55,7 @@ namespace Api.Domain.Models.UserAggregate
             get { return _status; }
             set
             {
-                _status = value;
+                _status = value == 0 ? 1 : value;
             }
         }
 
@@ -65,7 +65,7 @@ namespace Api.Domain.Models.UserAggregate
             get { return _typeUser; }
             set
             {
-                _typeUser = value;
+                _typeUser = value == 0 ? 2 : value;
             }
         }
 

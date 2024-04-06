@@ -7,11 +7,11 @@ namespace Api.Domain.Entities
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public DateTime DateBirth { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public DateTime DateBirth { get; set; }
         public Status Status { get; set; }
-        public Role TypeUser { get; set; }
+        public TypeUser TypeUser { get; set; }
 
     }
 
@@ -22,10 +22,9 @@ namespace Api.Domain.Entities
         Blocked = 3
     }
 
-    public enum Role
+    public enum TypeUser
     {
-        Regular = 1,
-        Admin = 2,
-        Guest = 3
+        Admin = 1,
+        Regular = 2
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "t2CzxYDJ3vsdXHuzvqu3k4vW8AUvF8eTGb/+AUrLazOIs7OzAFV+l2qtI91lewYKBb7ZeYBqtwWgNySTD0/HRw==",
+  "dgSpecHash": "hIqFeqNd/0GJMSRjvLxGNmMpC0C6CY8F2uyeibgY7+Xi5PCgLjxbxx+g8oGPpIsIR3AuaA7hu5U83uJkxXH0ng==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Documents\\Desenvolvimento\\Cursos\\netcore\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj",
   "expectedPackageFiles": [
@@ -11,5 +11,26 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.IdentityModel.Tokens.Jwt' 6.8.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.IdentityModel.Tokens.Jwt' 6.8.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8g9c-28fc-mcx2",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

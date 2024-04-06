@@ -14,6 +14,8 @@ namespace Api.Data
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<UserEntity>(new UserMap().Configure);
+
+            //Podemos tb configurar para popular o banco com dados fakes
         }
     }
 }
