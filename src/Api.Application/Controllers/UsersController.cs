@@ -59,7 +59,7 @@ namespace Api.Application.Controllers
 
         //[Authorize("Bearer")]
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] UserDtoCreate user)
+        public async Task<ActionResult> Create([FromBody] UserDtoCreate user)
         {
             if (!ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace Api.Application.Controllers
 
         [Authorize("Bearer")]
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] UserDtoUpdate user)
+        public async Task<ActionResult> Update([FromBody] UserDtoUpdate user)
         {
             if (!ModelState.IsValid)
             {

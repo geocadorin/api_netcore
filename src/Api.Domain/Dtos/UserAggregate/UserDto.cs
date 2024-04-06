@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 
 namespace Api.Domain.Dtos.UserAggregate
 {
+    // Este DTO é usado para retornar as queries de getAll e getById
     public class UserDto
     {
         public Guid Id { get; set; }
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string Email { get; set; }
-        //public string Password { get; set; }
+        public DateTime DateBirth { get; set; }
         public DateTime CreateAt { get; set; }
     }
 }

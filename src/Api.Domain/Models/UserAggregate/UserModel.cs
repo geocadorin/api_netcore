@@ -11,11 +11,18 @@ namespace Api.Domain.Models.UserAggregate
             set { _id = value; }
         }
 
-        private string _name;
-        public string Name
+        private string _firstName;
+        public string FirstName
         {
-            get { return _name; }
-            set { _name = value; }
+            get { return _firstName; }
+            set { _firstName = value; }
+        }
+
+        private string _lastName;
+        public string LastName
+        {
+            get { return _lastName; }
+            set { _lastName = value; }
         }
 
         private string _email;
@@ -30,6 +37,36 @@ namespace Api.Domain.Models.UserAggregate
         {
             get { return _password; }
             set { _password = value; }
+        }
+
+        private string _dateBirth;
+        public string DateBirth
+        {
+            get { return _dateBirth; }
+            set
+            {
+                _dateBirth = value;
+            }
+        }
+
+        private int _status;
+        public int Status
+        {
+            get { return _status; }
+            set
+            {
+                _status = value;
+            }
+        }
+
+        private int _typeUser;
+        public int TypeUser
+        {
+            get { return _typeUser; }
+            set
+            {
+                _typeUser = value;
+            }
         }
 
         private DateTime _createAt;
@@ -48,5 +85,7 @@ namespace Api.Domain.Models.UserAggregate
             get { return _updateAt; }
             set { _updateAt = value; }
         }
+
+
     }
 }
